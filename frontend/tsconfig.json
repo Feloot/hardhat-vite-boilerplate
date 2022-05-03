@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": [ "src/*" ],
+      "@artifacts/*": [ "../artifacts/*" ],
+      "@typechain-types/*": [ "../typechain-types/*" ],
+    },
+  },
+  "include": [
+    "src/**/*.scss",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "../artifacts/**/*.json",
+    "../typechain-types/**/*.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
